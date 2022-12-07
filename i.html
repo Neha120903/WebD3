@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket App</title>
+    <link rel="stylesheet" href="sty.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    
+</head>
+<body>
+    <header class = "header">
+        <div class="clr">
+            <div class="item" id = "red"></div>
+            <div class="item" id = "blue"></div>
+            <div class="item" id = "green"></div>
+            <div class="item" id = "black"></div>
+        </div>
+        <div class="add-col">
+            <div class="add-btn" id = "add-btn"><i class="fa-solid fa-plus fa-2x"></i></div>
+            <div class="delete-btn"><i class="fa-solid fa-trash fa-2x"></i></div>
+        </div>
+
+
+    </header>
+    <div class="ticket" id = "ticket">
+        <section >
+            <div ></div>
+            <div ></div>
+            <div ></div>
+        </section>
+    </div>
+
+
+    <section class = "get-ticket" id = "get-ticket">
+        <textarea name="get-input" class = "get-input"id="text" cols="30" rows="10"></textarea>
+        <div class="chose">
+            <div class="clr-check">
+
+                <div class="colors black" onclick="ticket_color('black')"></div>
+                <div class="colors blue" onclick="ticket_color('blue')"></div>
+                <div class="colors red" onclick="ticket_color('red')"></div>
+                 <div class="colors green" onclick="ticket_color('green')"></div>
+
+            
+        </div>
+        </div>
+    </section>
+</body>
+    <script src="h.js"></script>
+</html>
